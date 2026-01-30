@@ -1,17 +1,18 @@
+// 3 async functions (placeOrder, prepareFood, deliverFood)
 
 function placeOrder(item) {
   return new Promise((resolve) => {
     setTimeout(() => {
       const orderId = Math.floor(Math.random() * 1000);
-      // console.log(`Order placed for ${item}. Order ID: ${orderId}`);
+      console.log(`Order placed of item with order id: ${orderId}`);
       resolve(orderId);
-    }, 1000);
-  });
+    });
+  }, 1000);
 }
 function prepareFood(orderId) {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log(`Food is being prepared for order ${orderId}`);
+      console.log(`Order prepared of item with order id: ${orderId}`);
       resolve(orderId);
     }, 2000);
   });
@@ -19,24 +20,21 @@ function prepareFood(orderId) {
 function deliverFood(orderId) {
   return new Promise((resolve) => {
     setTimeout(() => {
-      console.log(`Food is delivered for order ${orderId}`);
+      console.log(`Order delivered of item with order id: ${orderId}`);
       resolve(orderId);
     }, 3000);
   });
 }
-
 placeOrder("Pizza")
   .then((orderId) => {
-    console.log("orderId from first promise: ", orderId);
-    return prepareFood(orderId)
+    return prepareFood(orderId);
   })
   .then((orderId) => {
-    console.log("orderId from second promise: ", orderId);
-    return deliverFood(orderId)
+    return deliverFood(orderId);
   })
-
-  .then((result) => console.log("Final: ", result))
-  .catch((error) => console.error(error));
-
-
-
+  .then((result) => {
+    console.log("Result: ", result);
+  })
+  .catch((error) => {
+    console.error(error);
+  });

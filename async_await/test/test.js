@@ -1,7 +1,10 @@
 async function testFetch() {
-  const res = await fetch("https://jsonplaceholder.typicode.com/posts");
-  console.log(res);
+  try {
+    const res = await fetch("https://jsonplaceholder.typicode.com/psts");
+    console.log(res);
+  } catch (error) {
+    console.log(error);
+  }
 }
 
 testFetch();
-
