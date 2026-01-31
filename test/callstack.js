@@ -18,12 +18,12 @@ Promise.resolve().then(() => {
 
 console.log('I');
 
-A
-I
-C
-G
-D
-B
-E
-F
-H
+// A
+// I
+// C
+// G
+// D
+// B
+// E
+// F
+// H
