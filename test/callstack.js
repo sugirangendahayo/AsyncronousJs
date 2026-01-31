@@ -20,7 +20,7 @@ console.log('I');
 ```
 
 <details>
-<summary>💡 Solution & Explanation</summary>
+
 
 
 ```
