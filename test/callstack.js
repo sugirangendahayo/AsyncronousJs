@@ -17,11 +17,7 @@ Promise.resolve().then(() => {
 });
 
 console.log('I');
-```
 
-
-
-```
 A
 I
 C
