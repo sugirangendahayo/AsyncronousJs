@@ -19,8 +19,6 @@ Promise.resolve().then(() => {
 console.log('I');
 ```
 
-<details>
-
 
 
 ```
