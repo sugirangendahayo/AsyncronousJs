@@ -42,7 +42,7 @@ async function getUserData(userId) {
   console.log("His posts including comments are:", posts);
   console.log("And here are his friends:", friends);
 
-    return { user, posts, friends };
+    // return { user, posts, friends };
   } catch (error) {
     console.error("Error: ", error);
   }
