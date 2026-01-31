@@ -22,7 +22,7 @@ console.log('I');
 <details>
 <summary>💡 Solution & Explanation</summary>
 
-**Output:**
+
 ```
 A
 I
