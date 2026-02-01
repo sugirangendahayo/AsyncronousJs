@@ -6,17 +6,18 @@ async function asyncCounter() {
     });
     result.push(i);
     console.log("Current number: ", i);
-    console.log("Current result: ", result);
+    // console.log("Current result: ", result);
   }
   return result;
 }
 async function runCounters() {
   try {
     const result = await asyncCounter();
-    console.log(result);
+    console.log("Final result: ", result);
   } catch (error) {
     console.error("Error: ", error);
     
   }
 }
-runCounters()
+runCounters();
+d
