@@ -18,4 +18,13 @@ async function fetchWithRetry(url, maxRetries = 3) {
     }
   }
 }
-fetchWithRetry("https://dummyjson.com/users", 3);
+async function main() {
+  try {
+    const response = await fetchWithRetry("https://dummyjsn.com/users");
+    console.log("Response: ", response);
+  } catch (error) {
+    console.error("Error: ", error);
+  }
+}
+
+main();
