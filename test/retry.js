@@ -20,7 +20,7 @@ async function fetchWithRetry(url, maxRetries = 3) {
 }
 async function main() {
   try {
-    const response = await fetchWithRetry("https://dummyjsn.com/users");
+    const response = await fetchWithRetry("https://dummyon.com/users");
     console.log("Response: ", response);
   } catch (error) {
     console.error("Error: ", error);
