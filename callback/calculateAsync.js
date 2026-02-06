@@ -15,7 +15,7 @@ function calculateAsync(a, b, operation, callback) {
         break;
 
       case "Divide":
-        result = b !== 0 ? a / b : "Error: Division by zero!";
+        result = b !== 0 ? a / b : "Error: Division by zero!!";
         break;
 
       default:
