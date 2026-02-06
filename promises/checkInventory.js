@@ -4,7 +4,7 @@ function checkInventory(item) {
       const inStock = ["laptop", "phone", "tablet"];
       inStock.includes(item.toLowerCase())
         ? resolve("Item found, resolved!")
-        : reject("Not found, rejected!");
+        : reject("Not found,... rejected!");
     });
   });
 }
