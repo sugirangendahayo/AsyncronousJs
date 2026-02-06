@@ -21,5 +21,5 @@ getFastPosts()
     console.log(posts);
   })
   .catch((err) => {
-    console.log("All requests failed", err);
+    console.log("All requests failed , Error happens here", err);
   });
