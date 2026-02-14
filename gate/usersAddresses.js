@@ -10,3 +10,11 @@ async function usersAddresses() {
     throw error;
   }
 }
+
+usersAddresses()
+  .then((result) => {
+    console.log(result);
+  })
+  .catch((error) => {
+    console.log(error);
+  });
