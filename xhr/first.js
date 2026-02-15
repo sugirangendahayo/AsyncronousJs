@@ -2,7 +2,7 @@ async function getFastPosts() {
   try {
     const urls = [
       "https://dummyjson.com/posts",
-      "https://this-may-not-exist.com/posts",
+      "https://this-maynot-exist.com/posts",
       " https://jsonplaceholder.typicode.com/posts",
     ];
     const response = await Promise.any(urls.map((url) => fetch(url)));
