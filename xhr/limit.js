@@ -1,6 +1,6 @@
 const xhr = new XMLHttpRequest();
 
-xhr.open("GET", "https://jsonplaceholder.typicode.com/posts?_limit=5", true);
+xhr.open("GET", "https://jsonplaceholder.typicode.com/posts?_limit=10", true);
 
 xhr.onload = function () {
   if (xhr.status === 200) {
