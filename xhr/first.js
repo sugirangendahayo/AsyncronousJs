@@ -6,7 +6,7 @@ async function getFastPosts() {
       " https://jsonplaceholder.typicode.com/posts",
     ];
     const response = await Promise.any(urls.map((url) => fetch(url)));
-    console.log("First response to resolve: ", response);
+    console.log("First response to resolve is: ", response);
   } catch (error) {
     console.error(error);
     
