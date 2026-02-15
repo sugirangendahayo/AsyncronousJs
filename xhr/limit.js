@@ -9,7 +9,7 @@ xhr.onload = function () {
       console.log(`${index + 1} . ${post.title}`);
     });
   } else {
-    console.log("Failed to load posts!");
+    console.log("Failed to load posts! there might be a problem...");
   }
 };
 xhr.onerror = function () {
