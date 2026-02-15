@@ -26,7 +26,7 @@ function fetchWithRetry(url, maxRetries = 3, delay = 1000) {
       console.error(`Attempt ${attempt} failed: ${reason}`);
 
       if (attempt >= maxRetries) {
-        reject(new Error(`Failed after ${maxRetries} attempts`));
+        reject(new Error(`Failed after ${maxRetries} attempts...`));
         return;
       }
       
