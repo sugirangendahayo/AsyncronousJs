@@ -3,10 +3,10 @@ async function fetchUserTodos() {
     const usersUrl = "https://jsonplaceholder.typicode.com/users";
     const todosUrl = "https://jsonplaceholder.typicode.com/todos";
 
-    const [users, todos] = await Promise.all([
-      fetch(usersUrl).then((res) => res.json()),
-      fetch(todosUrl).then((res) => res.json()),
-    ]);
+ const [users, todos] = await Promise.all([
+  fetch(usersUrl).then(res=> res.json()),
+  fetch(todosUrl).then(res=> res.json()),
+ ])
 
     return users.map((user) => ({
       ...user,
@@ -16,3 +16,7 @@ async function fetchUserTodos() {
     throw error;
   }
 }
+(async () => {
+  const data = await fetchUserTodos();
+  console.log(data);
+})();
