@@ -20,3 +20,4 @@ async function fetchUserTodos() {
   const data = await fetchUserTodos();
   console.log(data);
 })();
+
