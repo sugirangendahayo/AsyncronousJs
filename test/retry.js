@@ -7,7 +7,7 @@ async function fetchWithRetry(url, maxRetries = 3) {
       }
       return await response.json();
     } catch (error) {
-      console.error(`Attempt ${i + 1} failed: `, error.message);
+      console.error(`Attempt ${i + 1} failed...: `, error.message);
 
       if (i === maxRetries - 1) {
         throw new Error(`Failed after ${maxRetries} attempts`);
